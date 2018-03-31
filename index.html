@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<meta name="author" content="Alexander Khursa">
+	<title>
+		App
+	</title>
+	<link rel="icon" type="image/png" href="img/favicon.png"/>
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/media.css" />
+
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body class="body">
+	<div class="wrap">
+		<header class="header">
+			<button 
+				class="header__button--add" 
+				type="submit" 
+				form="task_list"
+				>
+				<img 
+					class="add" 
+					src="img/plus.png" 
+					alt="add"
+					>
+			</button>
+			<button 
+				class="header__button--completed" 
+				type="submit" 
+				form="task_list"
+				>
+				Compleated
+			</button>
+			<button 
+				class="header__button--latest" 
+				type="submit" 
+				form="task_list" 
+				>
+				Latest
+			</button>
+		</header>
+		<form 
+			id="task_list" 
+			action="#" 
+			method="get" 
+			name="task_list"
+			>
+			<ul class="list">
+				<li class="list__item">
+					<label 
+						for="task_1" 
+						class="checkbox"
+						>
+						<input 
+							type="checkbox" 
+							name="task" 
+							value="task_1" 
+							id="task_1">
+						<div class="checkbox__text">
+							<p class="checkbox__text--task">
+								Making a financial report
+							</p>
+							<p class="checkbox__text--date">
+								Due date - 
+								<time>
+									3 June 2015
+								</time>
+							</p>
+						</div>
+					</label>	
+				</li>
+				<li class="list__item">
+					<label 
+						for="task_2" 
+						class="checkbox">
+						<input 
+							type="checkbox"
+							name="task" 
+							value="task_2" 
+							id="task_2" 
+							checked
+							>
+						<div class="checkbox__text">
+							<p class="checkbox__text--task">
+								Making a financial report
+							</p>
+							<p class="checkbox__text--date">
+								Due date - 
+								<time>
+									3 June 2015
+								</time>
+							</p>
+						</div>
+					</label>				
+				</li>
+				<li class="list__item">
+					<label 
+						for="task_3" 
+						class="checkbox"
+						>
+						<input 
+							type="checkbox"
+							name="task" 
+							value="task_3" 
+							id="task_3"
+							checked
+							>
+						<div class="checkbox__text">
+							<p class="checkbox__text--task">
+								Making a financial report
+							</p>
+							<p class="checkbox__text--date">
+								Due date - 
+								<time>
+									3 June 2015
+								</time>
+							</p>
+						</div>
+					</label>	
+				</li>
+				<li class="list__item">
+					<label 
+						for="task_4" 
+						class="checkbox"
+						>
+						<input 
+							type="checkbox" 
+							name="task" 
+							value="task_4" 
+							id="task_4"
+							>
+						<div class="checkbox__text">
+							<p class="checkbox__text--task">
+								Making a financial report
+							</p>
+							<p class="checkbox__text--date">
+								Due date - 
+								<time>
+									3 June 2015
+								</time>
+							</p>
+						</div>
+					</label>	
+				</li>
+			</ul>
+  		</form>
+	</div>
+</body>
+</html>
